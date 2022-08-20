@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="background/background.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <form action="" id="my_form">
+        <div class="left-side">
+            <h1>Result</h1>
+            <div class="s-c-gpa">
+                <h2>Score.x.Credit Unit /
+                    <h3 id="maths">Maths: 0</h3>
+                    <h3 id="eng">English: 0</h3>
+                    <h3 id="bio">Biology: 0</h3>
+                    <h3 id="phy">Physics: 0</h3>
+                    <h3 id="chem">Chemistry: 0</h3>
+                    <h3 id="total">Total: 0</h3>
+                </h2>
+            </div>
+            <div class="scores">
+                <h2>Scores
+                    <h3 id="score-1">0</h3>
+                    <h3 id="score-2">0</h3>
+                    <h3 id="score-3">0</h3>
+                    <h3 id="score-4">0</h3>
+                    <h3 id="score-5">0</h3>
+                    <h3 id="total2">Total: 0</h3>
+                </h2>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="right-side">
+                <input type="number" id="first" placeholder="Mathematics">
+                <input type="number" id="second" placeholder="English">
+                <input type="number" id="third" placeholder="Biology">
+                <input type="number" id="fourth" placeholder="Physics">
+                <input type="number" id="fifth" placeholder="Chemistry">
+                <button type="submit" onclick="gpa()"> Calculate Results </button>
+            </div>    
+        </div>
+    </form>
+        <div class="CGPA">
+            <h2 id="GPA">GPA: 0</h2>
+        </div>
+    </div>
+</body>
+    <script src="gpa.js"></script>
+</html>
